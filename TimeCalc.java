@@ -16,55 +16,40 @@ public class TimeCalc {
         Newminutes = Totalmiuntes -(Totalhours * 60);
 
 		
-		if (9< Newhours &&  Newhours<12) {
+		if (9< Newhours &&  Newhours<24) {
 			if (Newminutes < 10) {
-				System.out.print( Newhours + ":" + "0" + Newminutes + " AM");
+				System.out.print( Newhours + ":" + "0" + Newminutes  );
 			}
 			else 
-			System.out.println( Newhours + ":" + Newminutes + " AM");
-			
+			System.out.println( Newhours + ":" + Newminutes  );
 		}
-		else if ( Newhours == 12) {
-			if (Newminutes < 10) {
-				System.out.println( Newhours + ":" + "0" + Newminutes + " PM");
-			}
-			else 
-			System.out.println( Newhours + ":" + Newminutes + " PM");
-			
-		}
+
 		else if ( Newhours > 0 &&  Newhours < 10)
 		{
 			if (Newminutes < 10) {
-				System.out.println( Newhours + ":" + "0" + Newminutes + " AM");
+				System.out.println("0" + Newhours + ":" + "0" + Newminutes );
 			}
 			else 
-			System.out.println( Newhours + ":" + Newminutes + " AM");
+			System.out.println("0" + Newhours + ":" + Newminutes);
 		}
 		else if ( Newhours == 0) {
 			if (Newminutes < 10) {
-				System.out.println("0" + ":" + "0" + Newminutes + " AM");
+				System.out.println("00" + ":" + "0" + Newminutes );
 			}
 			else {
 				
-			System.out.println("0" + ":" + Newminutes + " AM");
+			System.out.println("0" + ":" + Newminutes );
 			}
 		}
-			else if ( Newhours >12 &&  Newhours <24) {
-				 Newhours =  Newhours - 12;
-				if (Newminutes < 10) {
-					System.out.println( Newhours + ":" + "0" + Newminutes + " PM");
-				}
-				else 
-				System.out.println( Newhours + ":" + Newminutes + " PM");
-			}
+			
 		
 		    else if ( Newhours == 24) {
 			if (Newminutes < 10) {
-				System.out.println("0" + ":" + "0" + Newminutes + " AM");
+				System.out.println("0" + ":" + "0" + Newminutes );
 			}
 			else {
 				
-			System.out.println("0" + ":" + Newminutes + " AM");
+			System.out.println("0" + ":" + Newminutes );
 			}
 		}	
     }
