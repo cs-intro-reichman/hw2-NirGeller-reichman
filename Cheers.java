@@ -18,7 +18,7 @@ public class Cheers {
             while (i < numberOfCharacters) {
                 char currentLetter = newcheer.charAt(i);
                 if (otherchercters.indexOf(currentLetter) == -1) {
-                        System.out.println("Give me " + "a" + " " + currentLetter + ": " + currentLetter + "!");
+                        System.out.println("Give me " + "a" + "  " + currentLetter + ": " + currentLetter + "!");
 
          }
                 else {
