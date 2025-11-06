@@ -23,6 +23,6 @@ public  class  TestRandom {
 		}
 		System.out.println("> 0.5: " +largeCount);
 		System.out.println("<= 0.5: " +smallCount);
-        System.out.println("Ratio:" + ((double) largeCount/smallCount));
+        System.out.println("Ratio: " + ((double) largeCount/smallCount));
 	}
 }
