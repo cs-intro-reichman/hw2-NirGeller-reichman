@@ -18,10 +18,10 @@ public class Cheers {
             while (i < numberOfCharacters) {
                 char currentLetter = newcheer.charAt(i);
                 if (otherchercters.indexOf(currentLetter) == -1) {
-                        System.out.println("Give me a " + currentLetter + ": " + currentLetter + " !"); 
+                        System.out.println("Give me  a " + currentLetter + ": " + currentLetter + "!"); 
          }
                 else {
-                        System.out.println("Give me an " + currentLetter + ": " + currentLetter + " !");
+                        System.out.println("Give me  an " + currentLetter + ": " + currentLetter + "!");
         }
                 
                 i++;
@@ -30,7 +30,7 @@ public class Cheers {
             }
                 System.out.println("What does that spell?");
                 for (int j = 0; j < timesnum; j++) {
-                System.out.println(inputCheer + "!!!");
+                System.out.println(newcheer + "!!!");
                 }
 
         }
