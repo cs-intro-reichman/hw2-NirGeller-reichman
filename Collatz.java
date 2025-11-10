@@ -3,11 +3,11 @@ public class Collatz {
 	public static void main(String args[]) {
 	    int Seedinput = Integer.parseInt(args[0]);
 		String mode = args[1];
-		boolean isVerbose = mode.equals("V");
+		boolean isVerbose = mode.equals("v");
 		boolean Isconcise = mode.equals("c");
 		int cuurentseed;
 		for(cuurentseed = 1; cuurentseed <= Seedinput; cuurentseed++) {
-			int count = 0; 
+			int count = 1; 
 			int n = cuurentseed;
 			if (isVerbose) {
 				System.out.print(n + " ");
