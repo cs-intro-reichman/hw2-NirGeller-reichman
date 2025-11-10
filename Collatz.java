@@ -5,7 +5,8 @@ public class Collatz {
 		String mode = args[1];
 		boolean isVerbose = mode.equals("verbose");
 		boolean Isconcise = mode.equals("concise");
-		for(int cuurentseed = 1; cuurentseed <= Seedinput; cuurentseed++) {
+		int cuurentseed;
+		for(cuurentseed = 1; cuurentseed <= Seedinput; cuurentseed++) {
 			int count = 0; 
 			int n = cuurentseed;
 			if (isVerbose) {
@@ -29,9 +30,9 @@ public class Collatz {
 			} 
 		}
 		if (Isconcise) 
-			System.out.println("Every one of the first "+ Seedinput + " hailstone sequences reached 1.");
+			System.out.println("Every one of the first "+ (cuurentseed - 1) + " hailstone sequences reached 1.");
 		 if (isVerbose) 
-			System.out.println("Every one of the first "+ Seedinput + " hailstone sequences reached 1.");
+			System.out.println("Every one of the first "+ (cuurentseed - 1) + " hailstone sequences reached 1.");
 		 
 
 			
