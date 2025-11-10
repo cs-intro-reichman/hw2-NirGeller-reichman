@@ -24,12 +24,14 @@ public class Collatz {
 				}
 				count = count + 1;				
 			} while (n != 1);
-			System.out.println("(" + count + ")");  
+			if (isVerbose) {
+			System.out.println("(" + count + ")"); 
+			} 
 		}
 		if (Isconcise) 
-			System.out.println("Every one of the first "+ Seedinput + "hailstone sequences reached 1.");
+			System.out.println("Every one of the first "+ Seedinput + " hailstone sequences reached 1.");
 		 if (isVerbose) 
-			System.out.println("Every one of the first "+ Seedinput + "hailstone sequences reached 1.");
+			System.out.println("Every one of the first "+ Seedinput + " hailstone sequences reached 1.");
 		 
 
 			
